@@ -533,8 +533,8 @@ section {
 .price-amount span {
     font-family: var(--font-mono);
     font-size: 13px;
-    color: var(--text-dim);
-    font-weight: 400;
+    color: var(--text);
+    font-weight: bold;
 }
 
 /* ---------- Portfolio (real projects) ---------- */
