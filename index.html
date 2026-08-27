@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iqbal's Roots Portfolio</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.net.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zdog/1.1.3/zdog.dist.min.js"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="shortcut icon" width="100px" href="favicon.svg" type="image/x-icon">
+
+<body>
+
+  <nav>
+    <div class="wrap">
+      <div class="logo"><img width="140px" height="60px" src="iqbal.svg" alt=""></div>
+      <div class="nav-links nav-mobile-hide">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+      </div>
+      <a href="#contact" class="nav-cta">Start a Project →</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="wrap">
+      <div class="badge"><span class="dot"></span>Available for new projects</div>
+      <h1 id="heroTitle">I build things break them, <em>then fix them properly.
+        </em></h1>
+      <p>Clean, fast, responsive sites — built from scratch, no bloated templates. From landing pages to interactive
+        tools, I handle the whole build.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Start Your Project →</a>
+        <a href="#portfolio" class="btn btn-outline">View My Work</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-num" data-count="24">0</div>
+          <div class="stat-label">Hour Response</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="3">0</div>
+          <div class="stat-label">Live Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="100">0</div>
+          <div class="stat-label">% Custom Code</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-label">What I Offer</div>
+      <div class="section-title reveal">Services built around <span style="color:var(--accent)">what you actually
+          need.</span></div>
+      <div class="service-grid">
+        <div class="service-card reveal">
+          <span class="service-icon">🖥️</span>
+          <div class="service-title">Website Design</div>
+          <div class="service-desc">Responsive, fast-loading websites — landing pages, portfolios, or small business
+            sites, built to look sharp on every screen.</div>
+          <div class="service-price">
+            <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+              style="font-family:var(--font-mono); font-size:12px; color:var(--accent-2); margin-top:8px; display:inline-block;"
+              target="_blank">Contact about price →</a>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-icon">⚙️</span>
+          <div class="service-title">Interactive Features</div>
+          <div class="service-desc">Custom JavaScript tools — calculators, players, games, forms — anything that needs
+            to actually function, not just look nice.</div>
+          <div class="service-price">
+            <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+              style="font-family:var(--font-mono); font-size:12px; color:var(--accent-2); margin-top:8px; display:inline-block;"
+              target="_blank">Contact about price →</a>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <span class="service-icon">🛠️</span>
+          <div class="service-title">Bug Fixes & Updates</div>
+          <div class="service-desc">Already have a site? I'll debug issues, add features, or improve performance on your
+            existing codebase.</div>
+          <div class="service-price">
+
+            <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+              style="font-family:var(--font-mono); font-size:12px; color:var(--accent-2); margin-top:8px; display:inline-block;"
+              target="_blank">Contact about price →</a>
+          </div>
+
+        </div>
+        <div class="service-card reveal">
+          <span class="service-icon">📱</span>
+          <div class="service-title">Responsive Fixes</div>
+          <div class="service-desc">Site looks broken on mobile? I'll rebuild the layout so it works properly across
+            phones, tablets, and desktop.</div>
+          <div class="service-price">
+            <!-- <div class="service-price">Starting at $__</div> -->
+            <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+              style="font-family:var(--font-mono); font-size:12px; color:var(--accent-2); margin-top:8px; display:inline-block;"
+              target="_blank">Contact about price →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-label">Pricing</div>
+      <div class="section-title reveal">Simple packages, <span style="color:var(--accent-2)">no surprises.</span></div>
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-name">Starter</div>
+          <div class="price-desc">For a single-page site or small tool</div>
+          <div class="price-amount"><span>/ project</span></div>
+          <ul class="price-list">
+            <li>1 page, fully responsive</li>
+            <li>Basic interactivity</li>
+            <li>3-day delivery</li>
+          </ul>
+          <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+            class="btn btn-outline" style="justify-content: center; " target="_blank">Choose Starter </a>
+        </div>
+        <div class="price-card popular reveal">
+          <span class="popular-tag">Most Popular</span>
+          <div class="price-name">Growth</div>
+          <div class="price-desc">For a multi-page site with custom features</div>
+          <div class="price-amount">$__ <span>/ project</span></div>
+          <ul class="price-list">
+            <li>Up to 5 pages</li>
+            <li>Custom JS functionality</li>
+            <li>Mobile-first responsive</li>
+            <li>1 week delivery</li>
+          </ul>
+          <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+            class="btn btn-primary" style="justify-content: center; " target="_blank">Choose Growth </a>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-name">Pro</div>
+          <div class="price-desc">For a full custom build</div>
+          <div class="price-amount">$__ <span>/ project</span></div>
+          <ul class="price-list">
+            <li>Unlimited pages</li>
+            <li>Advanced functionality</li>
+            <li>Priority support</li>
+            <li>Ongoing revisions</li>
+          </ul>
+          <a href="https://wa.me/923339641134?text=Hi!%20I'd%20like%20to%20know%20more%20about%20Website%20Design."
+            class="btn btn-outline" style="justify-content: center; " target="_blank">Choose pro </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="section-label">Recent Work</div>
+      <div class="section-title reveal">Real projects, <span style="color:var(--accent)">live and working.</span></div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+          <div class="portfolio-icon">☾</div>
+          <div>
+            <div class="portfolio-title">Rooh ka Sukoon — Quran Player</div>
+            <div class="portfolio-tag">Audio streaming · Dynamic playlists · Responsive</div>
+          </div>
+          <a href="https://ikhansa623-source.github.io/Rooh-ka-Sukoon--Quran/" target="_blank">Live demo →</a>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-icon">🎴</div>
+          <div>
+            <div class="portfolio-title">Memory Matching Game</div>
+            <div class="portfolio-tag">Vanilla JS · Game logic · Animation</div>
+          </div>
+          <a href=" https://ikhansa623-source.github.io/memory-matching-game/" target="_blank">Live demo →</a>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-icon">🐾</div>
+          <div>
+            <div class="portfolio-title">Pet Age Calculator</div>
+            <div class="portfolio-tag">Form logic · Date calculations</div>
+          </div>
+          <a href="https://ikhansa623-source.github.io/Pet-Age-Calculator/" target="_blank" class="portfolio-link">View
+            live →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-label">How It Works</div>
+      <div class="section-title reveal">From idea to <span style="color:var(--accent-2)">live in days.</span></div>
+
+      <div class="zdog-strip reveal">
+        <div class="zdog-item"><canvas id="zdogDiamond" width="140" height="140"></canvas><span>Design</span></div>
+        <div class="zdog-item"><canvas id="zdogCube" width="140" height="140"></canvas><span>Build</span></div>
+        <div class="zdog-item"><canvas id="zdogStar" width="140" height="140"></canvas><span>Launch</span></div>
+        <div class="zdog-item"><canvas id="zdogRing" width="140" height="140"></canvas><span>Support</span></div>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="process-num">01</div>
+          <div class="process-title">You tell me the idea</div>
+          <div class="process-desc">A quick message about what you need — page, tool, or fix.</div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">02</div>
+          <div class="process-title">I scope it out</div>
+          <div class="process-desc">Clear price, timeline, and what's included — no surprises later.</div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">03</div>
+          <div class="process-title">I build it</div>
+          <div class="process-desc">Regular updates as I go, so you're never left wondering.</div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-num">04</div>
+          <div class="process-title">You get it live</div>
+          <div class="process-desc">Final review, revisions if needed, then it ships.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolbox" id="toolbox">
+    <div class="tool-wrap">
+      <div class="section-label">toolbox</div>
+      <div class="section-title">What I actually use</div>
+      <div class="tools-grid">
+        <span class="tool">HTML5</span>
+        <span class="tool">CSS3</span>
+        <span class="tool">JavaScript (ES6+)</span>
+        <span class="tool">DOM & Events</span>
+        <span class="tool">Fetch / Async-Await</span>
+        <span class="tool">Git & GitHub</span>
+        <span class="tool">Responsive Design</span>
+        <span class="tool">Debugging</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <div class="section-label">Get In Touch</div>
+        <div class="section-title reveal">Let's build <span style="color:var(--accent)">something together.</span></div>
+
+        <div id="vantaBg"></div>
+        <form id="contactForm">
+          <div class="contact-grid">
+            <div class="field">
+              <label>Your Name</label>
+              <input type="text" name="name" required placeholder="Jane Doe">
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="_replyto" required placeholder="jane@example.com">
+            </div>
+            <div class="field field-full">
+              <label>What do you need?</label>
+              <select name="service" required>
+                <option value="">Select a service...</option>
+                <option>Website Design</option>
+                <option>Interactive Feature</option>
+                <option>Bug Fix / Update</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field field-full">
+              <label>Project Details</label>
+              <textarea name="message" rows="4" placeholder="Tell me a bit about what you're looking for..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Send Project Brief →</button>
+        </form>
+        <div class="thanks" id="thanksMsg">
+          <div class="big">Message received 🎉</div>
+          <p style="color:var(--text-dim);">This is a placeholder confirmation — wire this up to an email service to
+            make it real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo" style="margin-bottom:14px;">Iqbal's <span> Roots</span></div>
+          <p style="color:var(--text-dim); font-size:14px; max-width:280px; line-height:1.6;">Building clean, functional
+            websites — one project at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Website Design</a></li>
+            <li><a href="#services">Interactive Features</a></li>
+            <li><a href="#services">Bug Fixes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Iqbal's Roots. All rights reserved.</p>
+        <div class="socials">
+          <a href="https://github.com/ikhansa623-source" target="_blank">Gh</a>
+          <a href="#" target="_blank">Li</a>
+          <a href="#" target="_blank">Fv</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/923339641134" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="30px" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12.004 2C6.486 2 2.001 6.485 2.001 12c0 1.988.58 3.845 1.585 5.407L2 22l4.686-1.55A9.953 9.953 0 0 0 12.004 22C17.522 22 22 17.515 22 12S17.522 2 12.004 2zm0 18.062a8.033 8.033 0 0 1-4.335-1.267l-.311-.196-3.221 1.066 1.083-3.14-.203-.322A8.03 8.03 0 1 1 20.062 12c0 4.443-3.616 8.062-8.058 8.062z" />
+    </svg>
+  </a>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
