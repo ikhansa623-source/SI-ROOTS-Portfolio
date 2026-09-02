@@ -1,47 +1,49 @@
-# SI Roots — Web Design & Development Portfolio
 
-A personal portfolio and web development studio site — built to showcase real, working projects rather than mockups.
+# SI ROOTS — Web Design & Development Portfolio
 
-**[Live Site](#)**
-![Hero Section](screenshot/hero-sec.png)
+A personal portfolio and web development studio site — built to showcase real, working projects for Swiss & Dutch businesses.
 
+**[🚀 Live Site](#)** 
+
+![SI ROOTS Hero Section](screenshot/hero-sec.png)
 
 ## Overview
 
-SI Roots is my portfolio and freelance studio site — founded in the name of my father, Shaukat Iqbal. It showcases my work, services, and a way for potential clients to get in touch directly.
+**SI ROOTS** is my portfolio and freelance web development studio — founded in the name of my father, Shaukat Iqbal. 
 
-## Features
+We build fast, responsive websites and AI-powered web apps that help small businesses grow online. This site showcases my work, services, and a direct way for potential clients to get in touch.
 
-- 🎨 Custom-built landing page — hero, services, pricing, portfolio, process, and contact sections
-- ✨ Scroll-reveal animations and interactive hover effects on cards
-- 📬 Working contact form (connected via Formspree)
-- 💬 Floating WhatsApp button for instant client contact
-- 📱 Fully responsive across mobile, tablet, and desktop
-- 🖼️ Real, live projects linked directly — not placeholder content
+## ✨ Key Features
 
-## Tech Stack
+- **Custom Landing Page**: Hero, Services, Pricing, Portfolio, Process, and Contact sections
+- **Smooth Animations**: Scroll-reveal effects and interactive hover animations
+- **Lead Generation**: Working contact form via Formspree + Floating WhatsApp button
+- **100% Responsive**: Perfect on mobile, tablet, and desktop
+- **Real Projects Only**: All portfolio links go to live, working websites
 
-- **HTML5** — semantic structure
-- **CSS3** — custom animations, responsive grid/flex layouts
-- **JavaScript (ES6+)** — scroll animations via `IntersectionObserver`, animated counters, form handling
-- **Formspree** — contact form backend (no custom server needed)
+## 🛠️ Tech Stack
 
-## Projects Featured
+- **Frontend**: HTML5, CSS3, JavaScript ES6+
+- **Animations**: IntersectionObserver API, Custom CSS Animations
+- **Forms**: Formspree for backend contact form handling
+- **Deployment**: GitHub Pages + Git Workflow
 
-- [Rooh ka Sukoon — Quran Player](#)
-- [Memory Matching Game](#)
-- [Pet Age Calculator](#)
+## 📂 Featured Projects
+1. [Rooh ka Sukoon — Quran Player](https://ikhansa623-source.github.io/Rooh-ka-Sukoon--Quran/)- Audio player with playlist & reciter        selection
+2. [Memory Matching Game]( https://ikhansa623-source.github.io/memory-matching-game/) - Interactive JS game with score tracking
+3. [Pet Age Calculator](https://ikhansa623-source.github.io/Pet-Age-Calculator/) - Responsive tool to convert pet age to human years
 
-## What I Learned Building This
 
-Beyond the frontend work, this project was where I learned the full deployment workflow — Git, GitHub, resolving push conflicts, GitHub Pages' static-hosting limitations, and connecting a contact form to a real backend service without writing my own server.
 
-## Running Locally
+## 📈 What I Learned
 
-1. Clone this repository
-2. Open `index.html` in any browser — no build step required
+This project taught me the full deployment workflow:
+- Git & GitHub version control and resolving merge conflicts
+- Deploying static sites with GitHub Pages
+- Integrating 3rd party services like Formspree without a custom backend
+- Building for performance and mobile-first design
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```
 ├── index.html
@@ -53,6 +55,11 @@ Beyond the frontend work, this project was where I learned the full deployment w
     └── hero-sec.png
 ```
 
----
 
-Built by Shaukat Iqbal — **SI Roots**
+
+## 🚀 Running Locally
+
+1. Clone this repository
+   ```bash
+   git clone https://github.com/ikhansa623-source/SI-ROOTS-Portfolio
+   Or [Download ZIP](https://github.com/ikhansa623-source/SI-ROOTS-Portfolio/archive/refs/heads/main.zip)
