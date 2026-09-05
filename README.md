@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="images/si-roots-logo.png" alt="SI ROOTS Logo" width="280">
+  <img src="si-roots-logo.png" alt="SI ROOTS Logo" width="280">
 </div>
 
 # SI ROOTS — Web Design & Development Portfolio
