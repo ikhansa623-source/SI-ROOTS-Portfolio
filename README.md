@@ -1,9 +1,12 @@
+<div style="text-align: center;">
+  <img src="images/si-roots-logo.png" alt="SI ROOTS Logo" width="280">
+</div>
 
 # SI ROOTS — Web Design & Development Portfolio
 
 A personal portfolio and web development studio site — built to showcase real, working projects for Swiss & Dutch businesses.
 
-**[🚀 Live Site](#)** 
+**[🚀 Live Site](https://ikhansa623-source.github.io/SI-ROOTS-Portfolio/)** 
 
 ![SI ROOTS Hero Section](screenshot/hero-sec.png)
 
